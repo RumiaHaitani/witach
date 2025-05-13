@@ -1,0 +1,117 @@
+body {
+    background-image: url('../images/alexandra-kochneva-.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--white);
+}
+
+
+@font-face {
+    font-family: 'TeletactileLatCyr';
+    src: url('../fonts/TeletactileRus.woff') format('woff'),
+         url('../fonts/TeletactileRus.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: var(--black);
+    padding: 32px 0;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_inner nav {
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+}
+
+.witach {
+    font-size: 48px;
+    color: var(--snow);
+}
+
+.sub_header {
+    background-color: var(--black);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.form_container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--black);
+}
+
+input::placeholder {
+    color: var(--black);
+}
+
+button {
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--snow);
+}
+
+.bottom_link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--white);
+    padding: 8px;
+    border: 2px solid var(--black);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login_link {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.login_link:hover {
+    background-color: var(--snow);
+}

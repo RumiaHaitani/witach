@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choose Category</title>
+  <link rel="stylesheet" href="../assets/css/reset.css" />
+  <link rel="stylesheet" href="../assets/css/user-navigate.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="header_inner">
+      <nav>
+        <p class="witach">witach</p>
+      </nav>
+      <nav>
+        <img onclick="show_modal('modal_auth')" src="../assets/images/profile.svg" alt="auth" />
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="black_bar">
+  <h2>CHOOSE CATEGORY</h2>
+</div>
+
+<main>
+  <div class="category_container">
+    <div class="category_card" data-aos="fade-up">
+      <img src="../assets/images/movie.svg" alt="Movies" />
+      <p>Фильмы</p>
+    </div>
+    <div class="category_card" data-aos="fade-up" data-aos-delay="100">
+      <img src="../assets/images/anime.svg" alt="Anime" />
+      <p>Аниме</p>
+    </div>
+    <div class="category_card" data-aos="fade-up" data-aos-delay="200">
+      <img src="../assets/images/series.svg" alt="Series" />
+      <p>Сериалы</p>
+    </div>
+    <div class="category_card" data-aos="fade-up" data-aos-delay="300">
+      <img src="../assets/images/category.svg" alt="Other" />
+      <p>Другое</p>
+    </div>
+  </div>
+</main>
+
+<!-- Модалка -->
+<div class="modal" id="modal_auth">
+  <div onclick="show_modal('modal_auth')" class="modal_bg"></div>
+  <div class="modal_content">
+    <a class="modal_link" href="login.html">Войти</a>
+    <a class="modal_link" href="register.html">Зарегистрироваться</a>
+  </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  function show_modal(id) {
+    document.getElementById(id).classList.toggle("active");
+  }
+</script>
+</body>
+</html>

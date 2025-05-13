@@ -1,0 +1,42 @@
+http://127.0.0.1:5000/item  POST
+
+{
+    "name":"Interstellar", 
+    "description":"the second best",
+    "id_category":1,
+    "id_type":1,
+    "id_user":1
+    }
+
+
+
+http://127.0.0.1:5000/login    POST
+
+    {
+    "login":899999999,
+    "password":"qwerty"
+}
+
+
+
+
+http://127.0.0.1:5000/item/1    PUT
+
+{
+    "name":"1+1", 
+    "description":"mama loves it",
+    "id_category":1,
+    "id_type":1,
+    "id_user":1
+    }
+
+
+http://127.0.0.1:5000/user/1   GET
+
+
+
+http://127.0.0.1:5000/user/1 PUT
+
+    {
+    "name":"rooot"
+}

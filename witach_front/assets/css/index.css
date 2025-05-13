@@ -1,0 +1,51 @@
+body {
+    background-color: var(--purpleDark);
+}
+
+main {
+    margin-top: 112px;
+}
+
+
+.main_title h1 {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 46px 56px;
+    font-size: clamp(2.125rem, 1.35rem + 3.88vw, 6rem);
+    margin-bottom: 235px;
+}
+
+.main_description {
+    padding: 100px 50px;
+    border-radius: 22px;
+    margin-bottom: 150px;
+}
+
+.main_description p {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: clamp(1.125rem, 0.85rem + 1.38vw, 2.5rem);
+    color: var(--white);
+}
+
+@font-face {
+    font-family: 'TeletactileLatCyr';
+    src: url('../fonts/TeletactileRus.woff') format('woff'),
+         url('../fonts/TeletactileRus.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TeletactileLatCyr', sans-serif;
+    margin: 0;
+    height: 200vh;
+    background-image: url('../images/alexandra-kochneva-.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+} 
+
+
+

@@ -1,0 +1,25 @@
+h1 {
+    margin-bottom: 24px;
+    background-color: var(--black);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    background-color: var(--black);
+    color: white;
+    padding: 20px;
+}
+.profile h2 {
+    font-size: 30px;
+}
+
+.profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

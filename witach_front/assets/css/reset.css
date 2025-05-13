@@ -1,0 +1,146 @@
+:root {
+    --purpleDark: rgb(81 90 144);
+    --purpleLight: rgb(111 127 215);
+    --lavanda: rgb(170 178 229);
+    --joker: rgb(101 85 143);
+    --white: white;
+    --black: rgb(37 37 37);
+    --snow: rgb(206 214 225);
+    --red: rgb(205, 79, 79);
+  }
+  
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'TeletactileLatCyr', sans-serif;
+}
+
+
+
+.container {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+}
+
+body {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    height: 100vh; /* Задает высоту родителя на 100% высоты окна */
+}
+
+.main_description {
+    position: absolute;
+    top: 30%; /* Смещение от верхнего края на половину высоты окна */
+    left: 50%; /* Смещение от левого края на половину ширины окна */
+    transform: translate(-50%, -50%); /* Сдвигает элемент обратно на половину его ширины и высоты */
+    
+    width: 80%; /* Или фиксированная ширина, например, 1046px */
+    max-width: 1046px;
+    height: auto; 
+    background: rgba(222, 206, 206, 0.643);
+    border: 1px solid #FF0000;
+    border-radius: 11px;
+    text-align: justify;
+    
+}
+
+.witach{
+    top: 1.5%; /* Смещение от верхнего края на половину высоты окна */
+    left: 22%; /* Смещение от левого края на половину ширины окна */
+    max-width: 1046px;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    column-gap: 46px;
+color: var(--snow);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    
+    background-color: var(--black);
+    padding: 32px 0 32px;
+}
+
+.header_inner {
+    height: 2.5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_inner nav {
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+}
+
+.header_inner nav img {
+    cursor: pointer;
+}
+
+
+.modal_bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.modal_content {
+    position: fixed;
+    top: -100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    /*background-color: var(--joker);*/
+    width: 90%;
+    max-width: 750px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: top 0.5s;
+}
+
+.modal.active .modal_bg {
+    display: block;
+}
+
+.modal.active .modal_content {
+    top: 5vh;
+}
+
+.modal.active .modal_settings{
+    display: block;
+}
+
+.login_link {
+    position: absolute;
+    top: 120%; /* Смещение от верхнего края на половину высоты окна */
+    left: 50%; /* Смещение от левого края на половину ширины окна */
+    transform: translate(-50%, -50%); /* Сдвигает элемент обратно на половину его ширины и высоты */
+    
+    width: 80%; /* Или фиксированная ширина, например, 1046px */
+    max-width: 1046px;
+    height: auto; 
+    font-size: 52px;
+    line-height: 55px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.main_description .welcome{
+    font-size: 70px;
+}
